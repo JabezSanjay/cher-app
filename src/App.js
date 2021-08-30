@@ -7,7 +7,8 @@ const App = () => {
   return (
     <div>
       <div className="m-10">
-        <BrandButton />
+        <BrandButton buttonName="yes" buttonValue={true} />
+        <BrandButton buttonName="no" buttonValue={false} />
       </div>
       <div className="m-10">
         <BrandImageDiv />
