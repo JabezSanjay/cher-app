@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import BrandButton from "./Components/BrandButton";
+import BrandImageDiv from "./Components/BrandImageDiv";
+import BrandInput from "./Components/BrandInput";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="m-10">
+        <BrandButton />
+      </div>
+      <div className="m-10">
+        <BrandImageDiv />
+      </div>
+      <div className="m-10">
+        <BrandInput />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
