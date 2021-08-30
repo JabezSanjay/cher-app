@@ -1,16 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 
-const BrandButton = ({ buttonName, buttonValue, setActive, active }) => {
-  const [selectedValue, setSelectedValue] = useState(buttonValue);
-
+const BrandButton = ({ buttonName, buttonValue }) => {
   return (
     <div>
       <button
         onClick={() => {
-          // console.log(selectedValue);
-          setSelectedValue(buttonValue);
+          console.log(buttonValue);
         }}
-        className={`p-3 w-20 m-4 text-white rounded-lg bg-indigo-800 hover:bg-indigo-600 `}
+        className={`p-3 w-20 m-4 text-black hover:text-white hover:bg-purple-800 border-2 border-purple-800 `}
       >
         {buttonName}
       </button>
