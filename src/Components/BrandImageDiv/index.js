@@ -8,7 +8,7 @@ const BrandImageDiv = ({ name, value, image }) => {
 
   return (
     <div className="hover:border-purple-800" onClick={returnValueOfImageDiv}>
-      <div className="p-4 md:w-1/6">
+      <div className="p-4 lg:w-1/6">
         <div
           className={`h-full border-2 hover:border-purple-800 
           cursor-pointer border-opacity-60 rounded-lg overflow-hidden`}

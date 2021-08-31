@@ -1,7 +1,7 @@
 import React from "react";
 import BrandButton from "./Components/BrandButton";
 import BrandImageDiv from "./Components/BrandImageDiv";
-import BrandInput from "./Components/BrandInput";
+import BrandInput from "./Components/BrandInputGroup";
 import HomeOutline from "./assets/images/home.svg";
 import RentOutline from "./assets/images/rent.svg";
 
