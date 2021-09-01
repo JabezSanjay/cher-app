@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const apiKey = "AIzaSyCSLSZ4uesQ-2Er85fECnQJ_5kuGteLrWY";
+const apiKey = process.env.REACT_APP_PLACES_API_KEY;
 const mapApiJs = "https://maps.googleapis.com/maps/api/js";
 // const geocodeJson = "https://maps.googleapis.com/maps/api/geocode/json";
 
@@ -131,20 +131,20 @@ const BrandInput = () => {
   return (
     <div className="flex flex-col">
       <input
-        value={address.country}
-        className="bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 w-56 mb-5 transition-colors duration-200 ease-in-out"
-        type="text"
-        placeholder="Country"
-        onChange={(e) => {
-          setAddress(e.target.value);
-        }}
-      />
-      <input
         value={address.city}
         className="bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 w-56 mb-5 leading-8 transition-colors duration-200 ease-in-out"
         type="text"
         placeholder="City"
         ref={searchInputCity}
+        onChange={(e) => {
+          setAddress(e.target.value);
+        }}
+      />
+      <input
+        value={address.country}
+        className="bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 w-56 mb-5 transition-colors duration-200 ease-in-out"
+        type="text"
+        placeholder="Country"
         onChange={(e) => {
           setAddress(e.target.value);
         }}

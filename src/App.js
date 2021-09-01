@@ -8,9 +8,12 @@ import RentOutline from "./assets/images/rent.svg";
 const App = () => {
   return (
     <div>
+      <div className="m-10">
+        <BrandInput />
+      </div>
       <div className="m-10 flex">
-        <BrandButton buttonName="yes" buttonValue={true} />
-        <BrandButton buttonName="no" buttonValue={false} />
+        <BrandButton buttonName="Yes" buttonValue={true} />
+        <BrandButton buttonName="No" buttonValue={false} />
       </div>
       <div className="m-10 flex">
         <BrandButton buttonName="Married" buttonValue={true} />
@@ -19,9 +22,6 @@ const App = () => {
       <div>
         <BrandImageDiv name="Home" value="home" image={HomeOutline} />
         <BrandImageDiv name="Rent" value="rent" image={RentOutline} />
-      </div>
-      <div className="m-10">
-        <BrandInput />
       </div>
     </div>
   );
